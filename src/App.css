@@ -1,22 +1,42 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: yellow;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white; 
+  font-size: 0;
+  /* z-index: 1; */
 }
 
-.App-link {
-  color: #09d3ac;
+.movieposter { 
+}
+
+.hidden {
+  position: absolute;
+  top: 0%;
+  font-size: 15px;
+  /* z-index: 2; */
+  visibility: hidden;
+  height: 100%;
+  overflow: auto; 
+  
+  
+  
+  /* opacity: 1; */
+}
+
+.App :hover .hidden {
+  visibility: visible;
+  color: white; 
+  opacity: 1;
+  background-color: rgba(0,0,0,0.7)
+  
+}
+
+.hidden :hover{
+  
+}
+
+.movieposter {
+  position: relative;
+  
 }
