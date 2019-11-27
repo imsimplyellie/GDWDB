@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 import "./Popup.js";
+import Popup from "./Popup.js";
 
 console.log(axios);
 
@@ -23,7 +24,9 @@ class App extends React.Component {
       });
 
     this.state = {
-      movies: []
+      movies: [],
+      isPopup: false,
+
     };
   }
 
@@ -38,7 +41,7 @@ class App extends React.Component {
               <div className = "hidden"> {movie.overview}</div>
             </div>);
           })}
-        
+          
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Popup.css";
 
 class Popup extends React.Component {  
     render() {  
@@ -6,7 +7,7 @@ class Popup extends React.Component {
   <div className='popup'>  
   <div className='popup\_inner'>  
   <h1>{this.props.text}</h1>  
-  <button onClick={this.props.closePopup}>close me</button>  
+  <button onClick={this.props.closePopup}>THIS IS KID FRIENDLY!!</button>  testy testy
   </div>  
   </div>  
   );  
